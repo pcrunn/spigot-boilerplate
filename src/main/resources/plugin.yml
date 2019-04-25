@@ -1,0 +1,30 @@
+# This file is a configuration for the plugin, the name, commands etc are specified here.
+# Every plugin must have a plugin.yml
+
+# Name - The name of the plugin.
+name: Spigot Boilerplate
+
+# Version - The version of the plugin.
+# This is NOT the version that the plugin runs on, you can just have it as 1.0 for now, and every time
+# You make a big update to the plugin, you can make it 1.1, 1.2, 1.3 etc.
+version: 1.0
+
+# Main - The main class of the plugin..
+# This is the .java file that has the onEnable method, and that's called a class!
+main: me.pcrunn.spigotboilerplate.SpigotBoilerplate
+
+# Commands - A list of commands that the plugin has.
+# If you have any commands on your plugins, you usually have to register them here.
+# There are plenty of properties that you can add into a command, but you can just don't add any
+# properties if you'd like to.
+#
+# Description - The description of your command that is displayed on /help.
+# Aliases - Self explanatory.
+# Permission - The permission that is required for a player to execute the command ( Can be given to a player via a group/rank plugin
+# such as PermissionEx or GroupManager)
+
+commands:
+  example:
+    description: An example!
+    aliases: [examplecmd, analiase]
+    permission: command.example
