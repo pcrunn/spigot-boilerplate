@@ -1,5 +1,6 @@
 package me.pcrunn.spigotboilerplate;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
@@ -10,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class SpigotBoilerplate extends JavaPlugin {
 
     /*
-     * A void is a list of things that you tell the program/plugin
+     * A void is a series of actions that you tell the program/plugin
      * to do instead of writing them every time and wasting your time.
      * Every programming language has this.
      * public means that it can be used by other classes such as JavaPlugin,
@@ -21,6 +22,12 @@ public class SpigotBoilerplate extends JavaPlugin {
     @Override
     public void onEnable() {
         // Literally whatever you want.
+
+
+        /*
+         * In the next line we register a listenr
+         */
+        Bukkit.getPluginManager().registerEvents(new SpigotListener(), this);
     }
 
     @Override
